@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | SAR & Optical Remote Sensing Specialist</title>
+    <title>Home | Shubham Singh</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <!-- Hero Section -->
@@ -12,24 +13,41 @@
         <div class="hero-content">
             <h1>Unveiling Earth's Hidden Stories from Space</h1>
             <p>Exploring Earth's landscapes through SAR and Optical Remote Sensing.</p>
-            <a href="research.html" class="btn">Explore My Research</a>
+            <button class="btn" id="explore-btn">Explore My Research</button>
         </div>
     </header>
 
+    <!-- Popup Modal -->
+    <div id="popup" class="popup hidden">
+        <div class="popup-content">
+            <span class="close-btn" id="close-btn">&times;</span>
+            <h2>Navigate Through My Work</h2>
+            <div class="popup-buttons">
+                <a href="about.html" class="popup-btn">About</a>
+                <a href="publications.html" class="popup-btn">Publications</a>
+                <a href="contact.html" class="popup-btn">Contact</a>
+            </div>
+        </div>
+    </div>
+
     <!-- Introduction Section -->
     <section class="intro">
+        <div class="intro-image">
+            <img src="assets/profile.jpg" alt="Shubham Singh">
+        </div>
         <div class="intro-text">
             <h2>Welcome!</h2>
             <p>
-                I specialize in Synthetic Aperture Radar (SAR) and Optical Remote Sensing—two powerful technologies that reveal Earth's secrets even through clouds and darkness. From mapping deforestation to assessing disaster damage, my work turns satellite data into actionable insights.
+                My name is <strong>Shubham Singh</strong>, currently a <strong>Postdoctoral Fellow</strong> at the Department of <strong>Urban and Environmental Policy and Planning</strong> at <strong>Tufts University, MA, USA</strong>.  
+                <br><br>
+                Previously, I was a <strong>Geospatial Analyst</strong> at <strong>GalaxEye Space</strong> in Bengaluru, India. I earned my <strong>PhD in Physics</strong> from the <strong>Indian Institute of Technology (BHU) Varanasi, India</strong>.  
+                <br><br>
+                I specialize in <strong>Synthetic Aperture Radar (SAR)</strong> and <strong>Optical Remote Sensing</strong>—technologies that reveal Earth's secrets even through clouds and darkness. From <strong>mapping deforestation</strong> to <strong>assessing disaster damage</strong>, my work transforms raw satellite data into actionable insights, making our world more transparent and informed.
             </p>
-        </div>
-        <div class="intro-image">
-            <img src="assets/satellite_image.jpg" alt="SAR and Optical Remote Sensing">
         </div>
     </section>
 
-    <!-- Key Focus Areas -->
+    <!-- Focus Areas Section -->
     <section class="focus-areas">
         <h2>My Areas of Expertise</h2>
         <div class="focus-grid">
@@ -52,16 +70,9 @@
         </div>
     </section>
 
-    <!-- Call to Action -->
-    <section class="cta">
-        <h2>Let's Collaborate</h2>
-        <p>Discover more about my work or get in touch for collaborations and insights.</p>
-        <a href="contact.html" class="btn">Contact Me</a>
-    </section>
-
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 [Your Name]. All Rights Reserved.</p>
+        <p>&copy; 2024 Shubham Singh. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
