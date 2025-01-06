@@ -875,3 +875,103 @@ footer {
         max-width: 80%;
     }
 }
+
+
+
+/* ============================
+   About Page Styles
+============================ */
+
+/* Biography Section */
+.about-bio {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 60px 5%;
+    background: #f9fafc;
+    flex-wrap: wrap;
+}
+
+.bio-content {
+    flex: 1;
+    max-width: 600px;
+}
+
+.bio-content h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
+.bio-content p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #4b5563;
+}
+
+.bio-image {
+    flex: 1;
+    text-align: center;
+}
+
+.bio-image img {
+    max-width: 300px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Research Philosophy */
+.about-research-philosophy {
+    text-align: center;
+    padding: 50px 5%;
+    background: #ffffff;
+}
+
+.about-research-philosophy p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #4b5563;
+}
+
+/* Achievements Section */
+.about-achievements {
+    padding: 50px 5%;
+    background: #e0e7ff;
+    text-align: center;
+}
+
+.achievements-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.achievement-card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Personal Side Section */
+.about-personal {
+    padding: 50px 5%;
+    background: #f9fafc;
+    text-align: center;
+}
+
+/* Call to Action */
+.about-cta {
+    text-align: center;
+    background: #4f46e5;
+    color: #ffffff;
+    padding: 50px 5%;
+}
+
+.btn-cta {
+    background: #ffffff;
+    color: #4f46e5;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
