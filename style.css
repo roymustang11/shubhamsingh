@@ -19,12 +19,16 @@ p {
     background: url('assets/earth_satellite.jpg') no-repeat center center/cover;
     color: #fff;
     text-align: center;
-    padding: 100px 20px;
-    min-height: 60vh;
+    padding: 50px 20px; /* Adjust padding for height */
+    min-height: 40vh; /* Adjust height to crop vertically */
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden; /* Prevent content from spilling */
+    object-fit: cover; /* Ensures cropping effect */
+    object-position: center top; /* Crop from the top */
 }
+
 
 .hero-content h1 {
     font-size: 2.5rem;
@@ -233,6 +237,14 @@ footer {
 
     .focus-grid {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        min-height: 30vh; /* Further reduce height for mobile */
+        padding: 30px 15px;
+        object-position: center top; /* Maintain focus on the top */
     }
 }
 
