@@ -883,6 +883,11 @@ footer {
 ============================ */
 
 /* ============================
+   About Page Styles
+============================ */
+
+
+/* ============================
    Header Section
 ============================ */
 .about-header {
@@ -921,9 +926,9 @@ footer {
 }
 
 /* ============================
-   Biography Section
+   Introduction Section
 ============================ */
-.about-bio {
+.about-intro {
     display: flex;
     align-items: center;
     gap: 30px;
@@ -947,6 +952,7 @@ footer {
     font-size: 1rem;
     margin-bottom: 20px;
     color: #4b5563;
+    line-height: 1.8;
 }
 
 .btn-about {
@@ -1002,28 +1008,28 @@ footer {
 }
 
 /* ============================
-   Achievements Section
+   Career Highlights Section
 ============================ */
-.about-achievements {
+.about-career {
     padding: 50px 5%;
     background: #e0e7ff;
     text-align: center;
 }
 
-.about-achievements h2 {
+.about-career h2 {
     font-size: 2rem;
     margin-bottom: 30px;
     color: #1f2937;
 }
 
-.achievements-container {
+.career-cards {
     display: flex;
     gap: 20px;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.achievement-card {
+.career-card {
     background: #ffffff;
     padding: 20px;
     border-radius: 8px;
@@ -1033,20 +1039,42 @@ footer {
     max-width: 250px;
 }
 
-.achievement-card:hover {
-    transform: translateY(-5px) scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-.achievement-card h3 {
+.career-card h3 {
     font-size: 1.2rem;
     margin-bottom: 10px;
     color: #4f46e5;
 }
 
-.achievement-card p {
+.career-card p {
     font-size: 0.9rem;
     color: #4b5563;
+}
+
+.career-card:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* ============================
+   Personal Side Section
+============================ */
+.about-personal {
+    text-align: center;
+    padding: 50px 5%;
+    background: #ffffff;
+}
+
+.about-personal h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #1f2937;
+}
+
+.about-personal p {
+    font-size: 1rem;
+    color: #4b5563;
+    margin-bottom: 20px;
+    line-height: 1.8;
 }
 
 /* ============================
@@ -1074,8 +1102,8 @@ footer {
     color: #4f46e5;
     padding: 10px 20px;
     border-radius: 5px;
-    font-weight: bold;
     text-decoration: none;
+    font-weight: bold;
     transition: background 0.3s ease, transform 0.2s ease;
 }
 
@@ -1098,7 +1126,7 @@ footer {
         margin-top: 10px;
     }
 
-    .about-bio {
+    .about-intro {
         flex-direction: column;
         text-align: center;
     }
@@ -1107,20 +1135,16 @@ footer {
         max-width: 300px;
     }
 
-    .achievements-container {
+    .career-cards {
         flex-direction: column;
     }
 
-    .achievement-card {
+    .career-card {
         max-width: 90%;
     }
 }
 
 @media (max-width: 480px) {
-    .about-header h1 {
-        font-size: 1.5rem;
-    }
-
     .top-nav {
         flex-wrap: wrap;
     }
@@ -1142,3 +1166,4 @@ footer {
         padding: 8px 14px;
     }
 }
+
