@@ -625,4 +625,163 @@ footer {
         height: 40px;
     }
 }
+/* ============================
+   Contact Page Styles
+============================ */
+
+/* Header Section */
+.contact-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background: #1f2937;
+    color: #ffffff;
+}
+
+.contact-header h1 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.top-nav {
+    display: flex;
+    gap: 12px;
+}
+
+.nav-btn {
+    background: #4f46e5;
+    color: #ffffff;
+    padding: 8px 14px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.nav-btn:hover {
+    background: #6d28d9;
+    transform: translateY(-2px);
+}
+
+/* Main Contact Section */
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 50px 5%;
+    background: #f9fafc;
+    flex-wrap: wrap;
+}
+
+/* Contact Information */
+.contact-info {
+    flex: 1;
+    max-width: 500px;
+    text-align: left;
+}
+
+.contact-info h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #1f2937;
+}
+
+.contact-info p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #4b5563;
+    line-height: 1.6;
+}
+
+.contact-details p {
+    margin: 5px 0;
+    font-size: 0.95rem;
+}
+
+.contact-details a {
+    color: #4f46e5;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Button */
+.btn-contact {
+    display: inline-block;
+    margin-top: 20px;
+    background: #4f46e5;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-contact:hover {
+    background: #6d28d9;
+    transform: scale(1.05);
+}
+
+/* Contact Image */
+.contact-image {
+    flex: 1;
+    text-align: center;
+    max-width: 400px;
+}
+
+.contact-image img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-info {
+        text-align: center;
+    }
+
+    .contact-details {
+        text-align: center;
+    }
+
+    .btn-contact {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    .contact-image {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .contact-info h2 {
+        font-size: 1.5rem;
+    }
+
+    .btn-contact {
+        font-size: 0.85rem;
+        padding: 6px 14px;
+    }
+}
 
