@@ -882,13 +882,53 @@ footer {
    About Page Styles
 ============================ */
 
-/* Biography Section */
+/* ============================
+   Header Section
+============================ */
+.about-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background: #1f2937;
+    color: #ffffff;
+}
+
+.about-header h1 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.top-nav {
+    display: flex;
+    gap: 12px;
+}
+
+.nav-btn {
+    background: #4f46e5;
+    color: #ffffff;
+    padding: 8px 14px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.nav-btn:hover {
+    background: #6d28d9;
+    transform: translateY(-2px);
+}
+
+/* ============================
+   Biography Section
+============================ */
 .about-bio {
     display: flex;
     align-items: center;
     gap: 30px;
     padding: 60px 5%;
-    background: #f9fafc;
+    background: #ffffff;
     flex-wrap: wrap;
 }
 
@@ -900,6 +940,7 @@ footer {
 .bio-content h2 {
     font-size: 2.2rem;
     margin-bottom: 15px;
+    color: #1f2937;
 }
 
 .bio-content p {
@@ -908,41 +949,77 @@ footer {
     color: #4b5563;
 }
 
+.btn-about {
+    background: #4f46e5;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-about:hover {
+    background: #6d28d9;
+    transform: scale(1.05);
+}
+
+/* Biography Image */
 .bio-image {
     flex: 1;
     text-align: center;
 }
 
 .bio-image img {
-    max-width: 300px;
-    border-radius: 50%;
+    width: 100%;
+    max-width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Research Philosophy */
+/* ============================
+   Research Philosophy Section
+============================ */
 .about-research-philosophy {
     text-align: center;
     padding: 50px 5%;
-    background: #ffffff;
+    background: #f9fafc;
+}
+
+.about-research-philosophy h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #1f2937;
 }
 
 .about-research-philosophy p {
     font-size: 1rem;
     margin-bottom: 20px;
     color: #4b5563;
+    line-height: 1.8;
 }
 
-/* Achievements Section */
+/* ============================
+   Achievements Section
+============================ */
 .about-achievements {
     padding: 50px 5%;
     background: #e0e7ff;
     text-align: center;
 }
 
+.about-achievements h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #1f2937;
+}
+
 .achievements-container {
     display: flex;
-    justify-content: center;
     gap: 20px;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -952,16 +1029,29 @@ footer {
     border-radius: 8px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 250px;
 }
 
-/* Personal Side Section */
-.about-personal {
-    padding: 50px 5%;
-    background: #f9fafc;
-    text-align: center;
+.achievement-card:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Call to Action */
+.achievement-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #4f46e5;
+}
+
+.achievement-card p {
+    font-size: 0.9rem;
+    color: #4b5563;
+}
+
+/* ============================
+   Call to Action Section
+============================ */
 .about-cta {
     text-align: center;
     background: #4f46e5;
@@ -969,9 +1059,86 @@ footer {
     padding: 50px 5%;
 }
 
+.about-cta h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.about-cta p {
+    font-size: 1rem;
+    margin-bottom: 25px;
+}
+
 .btn-cta {
     background: #ffffff;
     color: #4f46e5;
     padding: 10px 20px;
     border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-cta:hover {
+    background: #e0e0e0;
+    transform: scale(1.05);
+}
+
+/* ============================
+   Responsive Design
+============================ */
+@media (max-width: 768px) {
+    .about-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .top-nav {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .about-bio {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .bio-image img {
+        max-width: 300px;
+    }
+
+    .achievements-container {
+        flex-direction: column;
+    }
+
+    .achievement-card {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .top-nav {
+        flex-wrap: wrap;
+    }
+
+    .nav-btn {
+        font-size: 0.8rem;
+        padding: 6px 10px;
+    }
+
+    .bio-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .bio-image img {
+        max-width: 80%;
+    }
+
+    .btn-cta {
+        padding: 8px 14px;
+    }
 }
