@@ -95,22 +95,27 @@ p {
 .popup-buttons {
     margin-top: 20px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
+    gap: 10px; /* Space between buttons */
 }
 
 .popup-btn {
-    background: #0078D7;
-    color: #fff;
-    padding: 10px 20px;
+    background: #4f46e5;
+    color: #ffffff;
+    padding: 8px 14px;
     text-decoration: none;
     border-radius: 5px;
-    transition: transform 0.3s ease;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: background 0.3s ease, transform 0.2s ease;
+    text-align: center;
+    flex: 0 1 45%; /* Ensures buttons align in rows of two */
 }
 
 .popup-btn:hover {
-    background: #005bb5;
-    transform: scale(1.1);
+    background: #6d28d9;
+    transform: scale(1.05);
 }
 
 /* Introduction Section */
