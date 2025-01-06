@@ -747,41 +747,114 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    /* Center Header Title */
+    .contact-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .contact-header h1 {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+    }
+
+    /* Center Navigation Buttons */
+    .top-nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .nav-btn {
+        width: 45%; /* Each button takes about half the width */
+        text-align: center;
+        font-size: 0.9rem;
+    }
+
+    /* Contact Container Adjustments */
     .contact-container {
         flex-direction: column;
         text-align: center;
+        gap: 20px;
+        padding: 30px 5%;
     }
 
     .contact-info {
         text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .contact-info h2 {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+
+    .contact-info p {
+        font-size: 0.95rem;
+    }
+
+    .btn-contact {
+        margin-top: 15px;
+        font-size: 0.9rem;
+        padding: 8px 16px;
     }
 
     .contact-details {
         text-align: center;
     }
 
-    .btn-contact {
-        padding: 8px 16px;
-        font-size: 0.9rem;
+    /* Contact Image Adjustments */
+    .contact-image {
+        margin-top: 20px;
     }
 
-    .contact-image {
-        margin-top: 30px;
+    .contact-image img {
+        max-width: 70%;
+        height: auto;
     }
 }
+
+/* ============================
+   Responsive Design - Small Mobile
+============================ */
 
 @media (max-width: 480px) {
     .contact-header h1 {
         font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .top-nav {
+        gap: 8px;
+    }
+
+    .nav-btn {
+        width: 100%; /* Each button takes full width */
+        font-size: 0.85rem;
+        padding: 6px 12px;
     }
 
     .contact-info h2 {
         font-size: 1.5rem;
     }
 
+    .contact-info p {
+        font-size: 0.9rem;
+    }
+
     .btn-contact {
         font-size: 0.85rem;
         padding: 6px 14px;
     }
-}
 
+    .contact-image {
+        margin-top: 15px;
+    }
+
+    .contact-image img {
+        max-width: 80%;
+    }
+}
