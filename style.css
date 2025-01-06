@@ -102,8 +102,8 @@ p {
 }
 
 .popup-btn {
-    background: #4f46e5; /* Button background color */
-    color: #ffffff; /* Text color */
+    background: #0078D7;
+    color: #fff;
     padding: 8px 14px; /* Button padding */
     text-decoration: none;
     border-radius: 5px; /* Rounded corners */
