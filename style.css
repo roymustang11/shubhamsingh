@@ -746,6 +746,10 @@ footer {
 }
 
 /* Responsive Design */
+/* ============================
+   Responsive Design - Mobile
+============================ */
+
 @media (max-width: 768px) {
     /* Center Header Title */
     .contact-header {
@@ -759,19 +763,20 @@ footer {
         margin-bottom: 15px;
     }
 
-    /* Center Navigation Buttons */
+    /* Center Navigation Buttons in Horizontal Row */
     .top-nav {
         display: flex;
-        flex-wrap: wrap;
         justify-content: center;
-        gap: 10px;
+        flex-wrap: wrap; /* Ensures wrapping if space runs out */
+        gap: 10px; /* Space between buttons */
         margin-top: 10px;
     }
 
     .nav-btn {
-        width: 45%; /* Each button takes about half the width */
         text-align: center;
         font-size: 0.9rem;
+        padding: 8px 12px;
+        flex: 0 0 auto; /* Prevent buttons from stretching */
     }
 
     /* Contact Container Adjustments */
@@ -827,14 +832,19 @@ footer {
         margin-bottom: 10px;
     }
 
+    /* Keep Buttons Horizontal on Smaller Screens */
     .top-nav {
+        justify-content: center;
         gap: 8px;
+        flex-wrap: nowrap; /* Prevent wrapping */
+        overflow-x: auto; /* Allow horizontal scroll if needed */
     }
 
     .nav-btn {
-        width: 100%; /* Each button takes full width */
         font-size: 0.85rem;
-        padding: 6px 12px;
+        padding: 6px 10px;
+        white-space: nowrap; /* Prevent text from wrapping */
+        flex: 0 0 auto;
     }
 
     .contact-info h2 {
