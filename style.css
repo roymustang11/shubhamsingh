@@ -96,21 +96,23 @@ p {
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
     gap: 10px; /* Space between buttons */
 }
 
 .popup-btn {
-    background: #4f46e5;
-    color: #ffffff;
-    padding: 8px 14px;
+    background: #4f46e5; /* Button background color */
+    color: #ffffff; /* Text color */
+    padding: 8px 14px; /* Button padding */
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 5px; /* Rounded corners */
     font-size: 0.9rem;
     font-weight: 500;
-    transition: background 0.3s ease, transform 0.2s ease;
     text-align: center;
-    flex: 0 1 45%; /* Ensures buttons align in rows of two */
+    transition: background 0.3s ease, transform 0.2s ease;
+    flex: 0 1 auto; /* Prevents buttons from stretching unevenly */
+    white-space: nowrap; /* Prevents button text from wrapping */
 }
 
 .popup-btn:hover {
