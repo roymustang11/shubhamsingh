@@ -40,17 +40,13 @@
             </p>
             <a href="assets/Shubham_CV.pdf" class="btn btn-about" download>Download My CV</a>
         </div>
+
+        <!-- Replaced the image with a map container -->
         <div class="bio-image">
-            <img src="assets/IMG_2706.jpeg" alt="Shubham Singh">
+            <div id="map" style="width: 100%; height: 500px;"></div>
         </div>
-        
     </section>
-    <section class="about-journey">
-    <h2>My Academic Journey</h2>
-    <p>Here’s a quick map tracing my journey from Varanasi to Raebareli, Bhopal, Bangalore, and finally Boston.</p>
-    <div id="map" style="width: 100%; height: 500px; margin-top: 1.5rem;"></div>
-    </section>
-    
+
     <!-- Research Philosophy Section -->
     <section class="about-research-philosophy">
         <h2>My Research Philosophy</h2>
@@ -100,53 +96,51 @@
     <footer>
         <p>&copy; 2024 Shubham Singh. All Rights Reserved.</p>
     </footer>
-    
-<script
-  src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-  integrity="sha256-XQoYMqMTK8Lvdl+M2xCu4SX2e0CIse6Vx2fFy0TVygQ="
-  crossorigin=""
-></script>
 
-<!-- Inline Script to Initialize Map -->
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
+    <!-- Leaflet JS -->
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-XQoYMqMTK8Lvdl+M2xCu4SX2e0CIse6Vx2fFy0TVygQ="
+      crossorigin=""
+    ></script>
 
-    // 1. Initialize the map (center in India, zoom out to show USA eventually)
-    const map = L.map('map').setView([23.5937, 80.9629], 5);
+    <!-- Inline Map Initialization Script -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // 1. Initialize the map (center in India, zoom out to show USA if needed)
+        const map = L.map('map').setView([23.5937, 80.9629], 5);
 
-    // 2. Add a base map layer
-    L.tileLayer(
-      'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
-      {
-        attribution: 'Map data &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
-      }
-    ).addTo(map);
+        // 2. Add a base tile layer (OpenStreetMap)
+        L.tileLayer(
+          'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+          {
+            attribution: 'Map data &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
+          }
+        ).addTo(map);
 
-    // 3. Define journey coordinates in order
-    const journeyPath = [
-      [25.3176, 82.9739],  // Varanasi
-      [26.2303, 81.2340],  // Raebareli
-      [23.2599, 77.4126],  // Bhopal
-      [12.9716, 77.5946],  // Bangalore
-      [42.3601, -71.0589]  // Boston
-    ];
+        // 3. Define your journey path (Varanasi → Raebareli → Bhopal → Bangalore → Boston)
+        const journeyPath = [
+          [25.3176, 82.9739],  // Varanasi
+          [26.2303, 81.2340],  // Raebareli
+          [23.2599, 77.4126],  // Bhopal
+          [12.9716, 77.5946],  // Bangalore
+          [42.3601, -71.0589]  // Boston
+        ];
 
-    // 4. Place markers
-    L.marker([25.3176, 82.9739]).addTo(map).bindPopup("Varanasi (Birthplace)");
-    L.marker([26.2303, 81.2340]).addTo(map).bindPopup("Raebareli (Schooling)");
-    L.marker([23.2599, 77.4126]).addTo(map).bindPopup("Bhopal (BS/MS)");
-    L.marker([12.9716, 77.5946]).addTo(map).bindPopup("Bangalore (Job)");
-    L.marker([42.3601, -71.0589]).addTo(map).bindPopup("Boston (Postdoc)");
+        // 4. Add markers at each location
+        L.marker([25.3176, 82.9739]).addTo(map).bindPopup("Varanasi (Birthplace)");
+        L.marker([26.2303, 81.2340]).addTo(map).bindPopup("Raebareli (Schooling)");
+        L.marker([23.2599, 77.4126]).addTo(map).bindPopup("Bhopal (BS/MS)");
+        L.marker([12.9716, 77.5946]).addTo(map).bindPopup("Bangalore (Job)");
+        L.marker([42.3601, -71.0589]).addTo(map).bindPopup("Boston (Postdoc)");
 
-    // 5. Draw a red polyline to connect the markers
-    L.polyline(journeyPath, {
-      color: 'red',
-      weight: 4,
-      opacity: 0.8
-    }).addTo(map);
-  });
-</script>
+        // 5. Connect them with a red polyline
+        L.polyline(journeyPath, {
+          color: 'red',
+          weight: 4,
+          opacity: 0.8
+        }).addTo(map);
+      });
+    </script>
 </body>
 </html>
-
-
