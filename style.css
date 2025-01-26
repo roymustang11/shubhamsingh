@@ -1062,7 +1062,7 @@ footer {
 }
 
 .about-svg .journey-svg {
-    max-width: 95%; /* Adjust size for better balance */
+    max-width: 98%; /* Adjust size for better balance */
     height: auto;
     display: inline-block;
     margin-top: 20px;
@@ -1076,14 +1076,7 @@ footer {
     transform: scale(1.05); /* Slight zoom on hover */
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
 }
-.about-svg .journey-svg {
-    border: 3px solid transparent; /* Add border space */
-    border-radius: 20px;
-    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient for the border */
-    padding: 3px; /* Space for gradient border */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    background-clip: padding-box; /* Clip gradient border */
-}
+
 
 
 
