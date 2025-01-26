@@ -1063,7 +1063,7 @@ footer {
 }
 
 .about-svg .journey-svg {
-    max-width: 100%; /* Makes the SVG take up the full width of its container */
+    max-width: 125%; /* Makes the SVG take up the full width of its container */
     height: auto; /* Maintain aspect ratio */
     display: inline-block;
     margin-top: 10px;
