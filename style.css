@@ -926,14 +926,16 @@ footer {
 }
 
 /* Button Styling */
+
 .btn-about {
     display: inline-block;
     margin: 10px 10px 0 0; /* Adds space between buttons */
-    padding: 10px 20px;
+    padding: 8px 16px; /* Reduced padding for smaller buttons */
     background-color: #1f2937; /* Dark button background */
     color: #ffffff; /* White text color */
     text-decoration: none; /* Removes underline */
     font-weight: 600; /* Bold font */
+    font-size: 0.85rem; /* Slightly smaller font size */
     border-radius: 8px; /* Rounded corners */
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
