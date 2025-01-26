@@ -937,6 +937,26 @@ footer {
     border-radius: 8px; /* Rounded corners */
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
+/* Bio content container to align buttons horizontally */
+.bio-content {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping on small screens if necessary */
+    justify-content: center; /* Centers buttons horizontally */
+    gap: 15px; /* Adds space between buttons */
+    align-items: center; /* Vertically center buttons */
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .bio-content {
+        justify-content: center; /* Ensure buttons stay centered */
+        gap: 10px; /* Adjust gap for smaller screens */
+    }
+
+    .btn-about {
+        padding: 10px 15px; /* Adjust padding for mobile */
+    }
+}
 
 .btn-about:hover {
     background-color: #4b5563; /* Slightly lighter on hover */
