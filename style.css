@@ -1055,13 +1055,10 @@ footer {
 /* ============================
    SVG Section (My Journey Image)
 ============================ */
-/* ============================
-   SVG Section (My Journey Image)
-============================ */
 .about-svg {
     text-align: center;
     padding: 20px 5%;
-    background: #f9fafc;
+    background: #f9fafc; /* Keeps the section background */
 }
 
 .about-svg .journey-svg {
@@ -1079,6 +1076,7 @@ footer {
     transform: scale(1.05); /* Slight zoom on hover */
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
 }
+
 
 
 
