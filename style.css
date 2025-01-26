@@ -1057,8 +1057,9 @@ footer {
 ============================ */
 .about-svg {
     text-align: center;
-    padding: 20px 5%;
-    background: #f9fafc; /* Keeps the section background */
+    padding: 0;
+    background: transparent;
+  /*   background: #f9fafc; Keeps the section background */
 }
 
 .about-svg .journey-svg {
