@@ -1055,6 +1055,9 @@ footer {
 /* ============================
    SVG Section (My Journey Image)
 ============================ */
+/* ============================
+   SVG Section (My Journey Image)
+============================ */
 .about-svg {
     text-align: center;
     padding: 20px 5%;
@@ -1062,11 +1065,11 @@ footer {
 }
 
 .about-svg .journey-svg {
-    max-width: 98%; /* Adjust size for better balance */
-    height: auto;
+    max-width: 100%; /* Makes the SVG take up the full width of its container */
+    height: auto; /* Maintain aspect ratio */
     display: inline-block;
-    margin-top: 20px;
-    border-radius: 20px; /* Rounded corners */
+    margin-top: 10px;
+    border-radius: 0; /* Removes rounded corners */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
 }
@@ -1076,6 +1079,7 @@ footer {
     transform: scale(1.05); /* Slight zoom on hover */
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
 }
+
 
 
 
