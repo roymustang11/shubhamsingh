@@ -925,6 +925,27 @@ footer {
     transform: translateY(-2px);
 }
 
+/* Button Styling */
+.btn-about {
+    display: inline-block;
+    margin: 10px 10px 0 0; /* Adds space between buttons */
+    padding: 10px 20px;
+    background-color: #1f2937; /* Dark button background */
+    color: #ffffff; /* White text color */
+    text-decoration: none; /* Removes underline */
+    font-weight: 600; /* Bold font */
+    border-radius: 8px; /* Rounded corners */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-about:hover {
+    background-color: #4b5563; /* Slightly lighter on hover */
+    transform: translateY(-2px); /* Subtle lift effect */
+}
+
+
+
+
 /* ============================
    Introduction Section
 ============================ */
