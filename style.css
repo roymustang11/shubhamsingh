@@ -986,6 +986,30 @@ footer {
 }
 
 /* ============================
+   My Journey Section
+============================ */
+.about-journey {
+    text-align: center; /* Centers the text horizontally */
+    padding: 50px 5%; /* Adds spacing around the section */
+    background: #f9fafc; /* Light background for consistency */
+}
+
+.about-journey h2 {
+    font-size: 2rem; /* Adjust heading size */
+    margin-bottom: 20px; /* Space below the heading */
+    color: #1f2937; /* Darker text color for better contrast */
+}
+
+.about-journey p {
+    font-size: 1rem; /* Text size for paragraph */
+    margin: 0 auto; /* Centers the paragraph */
+    color: #4b5563; /* Grayish color for the text */
+    line-height: 1.8; /* Improves readability */
+    max-width: 800px; /* Limits the width for better alignment */
+}
+
+
+/* ============================
    SVG Section (My Journey Image)
 ============================ */
 .about-svg {
