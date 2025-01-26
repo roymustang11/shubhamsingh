@@ -1066,16 +1066,9 @@ footer {
     height: auto; /* Maintain aspect ratio */
     display: inline-block;
     margin-top: 10px;
-    border-radius: 0; /* Removes rounded corners */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    
 }
 
-/* Hover effect for SVG */
-.about-svg .journey-svg:hover {
-    transform: scale(1.05); /* Slight zoom on hover */
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
-}
 
 
 
